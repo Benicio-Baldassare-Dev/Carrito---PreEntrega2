@@ -1,0 +1,192 @@
+body{
+    background-color: #CACCFC;
+}
+
+header .interior {
+    max-width: 100%;
+    width: 100%;
+    background-color: #1a4c8a;
+}
+
+
+header h1{
+    color: white;
+    font: 25px;
+    padding: 10px;
+}
+
+.interior {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+header ul {
+    display: flex;
+    position: relative;
+    gap: 20px;
+    right: 10px;
+}
+
+header ul li {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+header ul li a{
+    color:  white;
+    font-size: 18px;
+}
+
+header p {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px;
+}
+
+nav #toggle,
+nav label {
+    display: none;
+}
+
+.navegacion {
+    color: black;
+}
+
+.navegacion a {
+    text-decoration: none;
+}
+
+header ul li:hover {
+    transform: scale(1.1);
+}
+
+.navegacion a:hover {
+    color: white;
+}
+
+.agregar-producto{
+    width: 50%;
+    border-radius: 5px;
+    padding: 20px 10px;
+    background-color:  #1a4c8a;
+    position: relative;
+    top: 20px;
+}
+
+.agregar-producto h2{
+    color: #7C82FE;
+    font-size: 30px;
+}
+
+.agregar-producto p{
+    color: #7C82FE;
+    font-size: 18px;
+}
+
+.agregar-btn{
+    position: relative;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    background-color: #454DF9;
+    color: white;
+}
+
+.agregar-btn:hover{
+    background-color: white;
+    border: 2px solid #454DF9;
+    color:  #454DF9;
+    transform: scale(1.1);
+}
+
+
+.buscar-producto{
+    width: 50%;
+    border-radius: 5px;
+    padding: 20px 10px;
+    background-color:  #1a4c8a;
+    position: relative;
+    top: 20px;
+    right: -52%;
+}
+
+.buscar-producto h2{
+    color: #7C82FE;
+    font-size: 30px;
+}
+
+.buscar-producto p{
+    color: #7C82FE;
+    font-size: 18px;
+}
+
+.buscar-btn{
+    position: relative;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    background-color: #454DF9;
+    color: white;
+}
+
+.buscar-btn:hover{
+    background-color: white;
+    border: 2px solid #454DF9;
+    color:  #454DF9;
+    transform: scale(1.1);
+}
+
+
+.filtrar-producto{
+    width: 50%;
+    border-radius: 5px;
+    padding: 20px 10px;
+    background-color:  #1a4c8a;
+    position: relative;
+    top: 20px;
+}
+
+.filtrar-producto h2{
+    color: #7C82FE;
+    font-size: 30px;
+}
+
+.filtrar-producto p{
+    color: #7C82FE;
+    font-size: 18px;
+}
+
+.filtrar-btn{
+    position: relative;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    background-color: #454DF9;
+    color: white;
+}
+
+.filtrar-btn:hover{
+    background-color: white;
+    border: 2px solid #454DF9;
+    color:  #454DF9;
+    transform: scale(1.1);
+}
+
+.carrito-cnt{
+    padding: 3px;
+    position: relative;
+    top: 20px;
+}
+
+.h4-input{
+    color: #7C82FE;
+    font-size: 25px;
+}
+
+input{
+    border-radius: 10px;
+    padding: 10px 15px;
+}
