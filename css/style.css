@@ -1,192 +1,89 @@
+:root{
+    --color-texto: black;
+    --color-ascento: #4200FF;
+    --color-ascento-claro: #9C7AFF;
+}
+
 body{
-    background-color: #CACCFC;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
-header .interior {
-    max-width: 100%;
-    width: 100%;
-    background-color: #1a4c8a;
-}
-
-
-header h1{
-    color: white;
-    font: 25px;
-    padding: 10px;
-}
-
-.interior {
-    width: 100%;
-    margin: auto;
+.interior{
     display: flex;
     justify-content: space-between;
 }
 
-li {
+header{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.104);
+    padding: 10px 0;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+header nav a:hover:not(#cart){
+    color: var(--color-ascento); 
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+}
+
+header nav div{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+}
+
+header nav ul{
+    display: flex;
+    gap: 30px;
     list-style: none;
 }
 
-header ul {
-    display: flex;
-    position: relative;
-    gap: 20px;
-    right: 10px;
+h3, p{
+    margin: 6px 0;
 }
 
-header ul li {
-    margin-right: 20px;
-    margin-top: 20px;
-}
-
-header ul li a{
-    color:  white;
-    font-size: 18px;
-}
-
-header p {
-    font-weight: bold;
-    font-size: 20px;
-    margin: 20px;
-}
-
-nav #toggle,
-nav label {
-    display: none;
-}
-
-.navegacion {
-    color: black;
-}
-
-.navegacion a {
-    text-decoration: none;
-}
-
-header ul li:hover {
-    transform: scale(1.1);
-}
-
-.navegacion a:hover {
+button{
+    background-color: var(--color-ascento);
     color: white;
-}
-
-.agregar-producto{
-    width: 50%;
+    padding: 5px 10px;
+    border: unset;
     border-radius: 5px;
-    padding: 20px 10px;
-    background-color:  #1a4c8a;
-    position: relative;
-    top: 20px;
+    cursor: pointer;
 }
 
-.agregar-producto h2{
-    color: #7C82FE;
-    font-size: 30px;
+#cuenta-carrito{
+    background-color: var(--color-ascento-claro);
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
 }
 
-.agregar-producto p{
-    color: #7C82FE;
-    font-size: 18px;
+#logo{
+    height: 40px;
 }
 
-.agregar-btn{
-    position: relative;
-    padding: 10px 15px 10px 15px;
-    border-radius: 10px;
-    background-color: #454DF9;
-    color: white;
+header nav img{
+    height: 25px;
 }
 
-.agregar-btn:hover{
-    background-color: white;
-    border: 2px solid #454DF9;
-    color:  #454DF9;
-    transform: scale(1.1);
-}
-
-
-.buscar-producto{
-    width: 50%;
-    border-radius: 5px;
-    padding: 20px 10px;
-    background-color:  #1a4c8a;
-    position: relative;
-    top: 20px;
-    right: -52%;
-}
-
-.buscar-producto h2{
-    color: #7C82FE;
-    font-size: 30px;
-}
-
-.buscar-producto p{
-    color: #7C82FE;
-    font-size: 18px;
-}
-
-.buscar-btn{
-    position: relative;
-    padding: 10px 15px 10px 15px;
-    border-radius: 10px;
-    background-color: #454DF9;
-    color: white;
-}
-
-.buscar-btn:hover{
-    background-color: white;
-    border: 2px solid #454DF9;
-    color:  #454DF9;
-    transform: scale(1.1);
-}
-
-
-.filtrar-producto{
-    width: 50%;
-    border-radius: 5px;
-    padding: 20px 10px;
-    background-color:  #1a4c8a;
-    position: relative;
-    top: 20px;
-}
-
-.filtrar-producto h2{
-    color: #7C82FE;
-    font-size: 30px;
-}
-
-.filtrar-producto p{
-    color: #7C82FE;
-    font-size: 18px;
-}
-
-.filtrar-btn{
-    position: relative;
-    padding: 10px 15px 10px 15px;
-    border-radius: 10px;
-    background-color: #454DF9;
-    color: white;
-}
-
-.filtrar-btn:hover{
-    background-color: white;
-    border: 2px solid #454DF9;
-    color:  #454DF9;
-    transform: scale(1.1);
-}
-
-.carrito-cnt{
-    padding: 3px;
-    position: relative;
-    top: 20px;
-}
-
-.h4-input{
-    color: #7C82FE;
-    font-size: 25px;
-}
-
-input{
-    border-radius: 10px;
-    padding: 10px 15px;
+footer{
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.104);
+    text-align: center;
+    margin-top: auto;
 }

@@ -1,56 +1,46 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-AR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Carrito de Compras</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">    
+    <title>Javascript | Comisión #57705</title>
 </head>
+
 <body>
     <header>
         <section class="interior">
-                <h1>Carrito</h1>
+            <h1>Carrito</h1>
             <nav>
                 <div class="navegacion">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/Tienda.html">Tienda</a></li>
-                    <li><a href="./pages/club.html">Club</a></li>
-                    <li><a href="./pages/galeria.html">Galeria</a></li>
-                    <li><a href="./pages/carrito.html">Carrito</a></li>
-                </ul>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./pages/tienda.html">Tienda</a></li>
+                        <li><a href="./pages/carrito.html">Carrito</a></li>
+                    </ul>
                 </div>
-                
-                
             </nav>
         </section>
     </header>
 
-    <div class="agregar-producto">
-        <h2>Agregar Producto</h2>
-        <p>Agrega un producto al carrito, apretando el siguiente boton</p>
-        <button class="agregar-btn" onclick="agregar()">Agregar Producto</button>
-        <div class="carrito-cnt">
-            <h4 class="h4-input">Cantidad de Productos</h4>
-            <input type="number" id="cantidad">
+    <main>
+        <h1 id="titulo">Productos</h1>
+        <div id="product-list">
+            <!-- Los productos se van a listar acá -->
         </div>
-    </div>
 
-    <div class="buscar-producto">
-        <h2>Buscar Producto</h2>
-        <p>Busca un producto en el carrito por su nombre</p>
-        <button class="buscar-btn" onclick="buscar()">Buscar Producto</button>
-    </div>
-
-    <div class="filtrar-producto">
-        <h2>Filtrar Productos</h2>
-        <p>Filtra productos por precio maximo</p>
-        <button class="filtrar-btn" onclick="filtrar()">Filtrar Productos por Precio</button>
-    </div>
-    
-    
-    
-    <script src="script.js"></script>
+        <h2>Productos en el carrito</h2>
+        <div id="cart">
+            <!-- El carrito se va a mostrar acá -->
+        </div>
+    </main>
+    <footer></footer>
+    <!-- Aca pongo los Script de JS -->
+    <script src="./JS/cartservice.js"></script>
+    <script src="./JS/index.js"></script>
+    <!-- Scripts de JS  -->
 </body>
+
 </html>
